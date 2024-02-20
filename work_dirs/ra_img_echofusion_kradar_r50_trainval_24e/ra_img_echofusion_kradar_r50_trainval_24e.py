@@ -310,7 +310,7 @@ model = dict(
     use_grid_mask=True,
     pretrained=dict(img='ckpts/resnet50_bev.pth'),
     pts_backbone=dict(
-        type='RadarResNet',
+        type='RadarResNet', # AutoFocusFormer
         stem_stride=1,
         depth=50,
         in_channels=20,
